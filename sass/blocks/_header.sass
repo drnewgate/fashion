@@ -1,0 +1,70 @@
+.navbar
+  &-top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 26px
+    margin-bottom: 62px
+  &-menu
+    display: flex
+    margin: 0
+    padding: 0
+    min-width: 520px
+    list-style: none
+    align-items: center
+    justify-content: space-between
+    margin-left: auto
+    margin-right: 50px
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    &__link
+      text-decoration: none
+      color: $primary
+.search
+  &__button
+    display: flex
+    align-items: center
+    padding: 13px 24px
+    border: 2px solid #1565D8
+    border-radius: 8px
+    color: #1565D8
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+.card
+  max-width: 1280px
+  height: 700px
+  border-radius: 8px
+  margin: auto
+  background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%) ,url(../img/header-image.jpg)
+  &__block
+    margin: 62px 0 0 102px
+    max-width: 652px
+  &__title
+    max-width: 425px
+    height: 205px
+    font-family: HK Grotesk
+    font-style: normal
+    font-weight: bold
+    font-size: 56px
+    line-height: 68px
+    margin: 0
+    margin-top: 34px
+    margin-bottom: 28px
+    color: $primary
+  &__text
+    margin: 0
+    margin-bottom: 52px
+  &__image
+    width: 100%
+    height: 100%
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    object-fit: cover
+    z-index: -2

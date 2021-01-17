@@ -6,7 +6,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   color: #5A7184;
-  background-color: #E5E5E5;
+  background-color: #FFFFFF;
 }
 
 .container {
@@ -359,5 +359,109 @@ template {
    */
 [hidden] {
   display: none;
+}
+
+.navbar-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 26px;
+  margin-bottom: 62px;
+}
+
+.navbar-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  min-width: 520px;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+  margin-right: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.navbar-menu__link {
+  text-decoration: none;
+  color: #183B56;
+}
+
+.search__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 13px 24px;
+  border: 2px solid #1565D8;
+  border-radius: 8px;
+  color: #1565D8;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.card {
+  max-width: 1280px;
+  height: 700px;
+  border-radius: 8px;
+  margin: auto;
+  background: -webkit-gradient(linear, right top, left top, color-stop(67.34%, rgba(238, 238, 238, 0.0001)), to(#E8EAE9)), url(../img/header-image.jpg);
+  background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%), url(../img/header-image.jpg);
+}
+
+.card__block {
+  margin: 62px 0 0 102px;
+  max-width: 652px;
+}
+
+.card__title {
+  max-width: 425px;
+  height: 205px;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 68px;
+  margin: 0;
+  margin-top: 34px;
+  margin-bottom: 28px;
+  color: #183B56;
+}
+
+.card__text {
+  margin: 0;
+  margin-bottom: 52px;
+}
+
+.card__image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
 }
 /*# sourceMappingURL=style.css.map */
