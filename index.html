@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
+    <div class="container">
+        <header>
             <div class="navbar-top">
                 <a href="/fashion/" class="logo">
                     <img src="img/logo.svg" alt="Logo: Ehya" class="logo__image" />
@@ -41,21 +41,65 @@
             <button class="card__button">Подобрать одежду</button>
             <div class="card__frame">
                 <div class=" card-item">
-                    <img src="img/icon/icon-money.svg" alt="Икнонка: деньги" />
+                    <img src="img/icon/icon-money.svg" alt="Иконка: деньги" />
                     <span class=" card-item-text">Онлайн оплата</span>
                 </div>
                 <div class=" card-item">
-                    <img src="img/icon/icon-protection.svg" alt="Икнонка: деньги" />
+                    <img src="img/icon/icon-protection.svg" alt="Иконка: деньги" />
                     <span class=" card-item-text">Онлайн оплата</span>
                 </div>
                 <div class=" card-item">
-                    <img src="img/icon/icon-like.svg" alt="Икнонка: деньги" />
+                    <img src="img/icon/icon-like.svg" alt="Иконка: деньги" />
                     <span class=" card-item-text">Онлайн оплата</span>
                 </div>
             </div>
             <!-- /.card__frame -->
         </div>
         <!-- /.card__block -->
+    </section>
+    <section class="collection">
+        <div class="container">
+            <div class="collection__wrapper">
+                <div class="collection__images">
+                    <div class="collection__images-first">
+                    <img src="img/collection/collection-1.png" class="collection__images-first" alt="Картинка: девушка с цветком">
+                    </div>
+                    <div class="collection__images-other">
+                        <img src="img/collection/collection-2.png" alt="Картинка: декор" class="collection__images-other-second"/>
+                        <img src="img/collection/collection-3.png" alt="Картинка: декор" class="collection__images-other-second"/>
+                    </div>
+                    <!-- /.collection__imeges-other -->
+                </div>
+                <!-- /.collection__images -->
+                <div class="collection__discription">
+                    <h2 class="collection__discription-title">
+                        Новая зимняя коллекция
+                    </h2>
+                    <p class="collection__discription-text">
+                        Сейчас зимний сезон. Вы можете увидеть больше из этой коллекции, нажав кнопку ниже. Успейте купить, пока коллекция есть в наличии. Используйте код EHYA20, чтобы получить 20% скидку.
+                    </p>
+                    <button class="collection__discription-button">Посмотреть коллекцию
+                        <img src="img/arrow.svg" alt="стрелошка" class="arrow">
+                    </button>
+                </div>
+                <!-- /.coolection-wrapper -->
+            </div>
+            <!-- /.collection__discription -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <section class="trends">
+        <div class="container">
+            <div class="trends-wrapper">
+                <h2 class="trends-title">Тренды</h2>
+                <ul class="tabs">
+                    <li data-target="#new" class="tabs__item tabs__item-active">Новинки</li>
+                    <li data-target="#best" class="tabs__item">Лучшее</li>
+                    <li data-target="#soon" class="tabs__item">Скоро</li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.container -->
     </section>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/main.js"></script>

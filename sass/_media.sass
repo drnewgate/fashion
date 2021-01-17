@@ -1,5 +1,27 @@
 @media ( max-width: 1200px)
-@media ( max-width: 992px)
-@media ( max-width: 767px)
-@media ( max-width: 576px )
-@media (max-width: 479px) and (min-width: 320px)
+  .container
+    max-width: 992px
+  .collection
+    &__images
+      &-first,
+        margin-right: 20px
+    &__discription
+      margin-left: 20px
+@media (max-width: 992px)
+  .container
+    max-width: 768px
+  .collection
+    &__wrapper
+      flex-direction: column
+    &__images
+      margin: auto
+    &__discription
+      margin-top: 40px
+      &-title
+        max-width: 600px
+      &-text
+        max-width: 672px
+        margin-bottom: 24px
+@media (max-width: 768px)
+  .container
+    max-width: 672px
