@@ -375,6 +375,20 @@ template {
   margin-bottom: 62px;
 }
 
+.navbar-top_button {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #1565D8;
+  padding: 10px 12px;
+  background-color: #fff;
+  border-color: #1565D8;
+  border-radius: 8px;
+}
+
 .navbar-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -402,23 +416,6 @@ template {
   color: #183B56;
 }
 
-.search__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 13px 24px;
-  border: 2px solid #1565D8;
-  border-radius: 8px;
-  color: #1565D8;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 22px;
-}
-
 .card {
   max-width: 1280px;
   height: 700px;
@@ -426,11 +423,20 @@ template {
   margin: auto;
   background: -webkit-gradient(linear, right top, left top, color-stop(67.34%, rgba(238, 238, 238, 0.0001)), to(#E8EAE9)), url(../img/header-image.jpg);
   background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%), url(../img/header-image.jpg);
+  padding: 68px 0 0 102px;
+  margin-bottom: 120px;
 }
 
-.card__block {
-  margin: 62px 0 0 102px;
-  max-width: 652px;
+.card__tag {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #36B37E;
+  background: rgba(54, 179, 126, 0.1);
+  border-radius: 2000px;
+  padding: 6px 16px;
 }
 
 .card__title {
@@ -448,20 +454,60 @@ template {
 }
 
 .card__text {
+  max-width: 652px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
   margin: 0;
   margin-bottom: 52px;
 }
 
-.card__image {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: -2;
+.card__button {
+  margin-bottom: 52px;
+  padding: 15px 40px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  background: #183B56;
+  border-radius: 8px;
+  color: #FFFFFF;
+}
+
+.card__frame {
+  width: 465px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-item-text {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  margin-left: 8px;
 }
 /*# sourceMappingURL=style.css.map */
