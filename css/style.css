@@ -421,10 +421,10 @@ template {
   max-width: 1280px;
   height: 700px;
   border-radius: 8px;
-  margin: auto;
   background: -webkit-gradient(linear, right top, left top, color-stop(67.34%, rgba(238, 238, 238, 0.0001)), to(#E8EAE9)), url(../img/header-image.jpg);
   background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%), url(../img/header-image.jpg);
   padding: 68px 0 0 102px;
+  margin: auto;
   margin-bottom: 120px;
 }
 
