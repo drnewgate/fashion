@@ -7,7 +7,7 @@
         margin-right: 20px
     &__discription
       margin-left: 20px
-@media (max-width: 992px)
+@media (max-width: 993px)
   .container
     max-width: 768px
   .collection
@@ -17,13 +17,31 @@
     &__images
       margin: auto
     &__discription
-      margin: 0
+      margin: auto
       margin-top: 40px
       &-title
         max-width: 600px
       &-text
         max-width: 672px
         margin-bottom: 24px
-@media (max-width: 768px)
+@media (max-width: 769px)
   .container
     max-width: 672px
+  .navbar
+    &-menu
+      display: none
+    &-top
+      &_button
+        display: none
+  .trends
+    &__wrapper
+      flex-direction: column
+    &-title
+      margin: auto
+      margin-bottom: 27px
+  .tabs
+    margin: auto
+  .content
+    &__item
+      &-active
+        justify-content: space-evenly

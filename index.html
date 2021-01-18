@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/hk-groteks?styles=21695,21692,21682" rel="stylesheet">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -27,6 +28,12 @@
                     <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Контакты</a></li>
                 </ul>
                 <button class="navbar-top_button">Войти</button>
+                
+                <button class="navbar-menu__button">
+                    <span class="navbar-menu__button--line"></span>
+                    <span class="navbar-menu__button--line"></span>
+                    <span class="navbar-menu__button--line"></span>
+                </button>   
             </div>
             <!-- /.navbar-top -->
         </div>
@@ -59,7 +66,7 @@
     </section>
     <section class="collection">
         <div class="container">
-            <div class="collection__wrapper">
+            <div class="collection__wrapper" >
                 <div class="collection__images">
                     <div class="collection__images-first">
                     <img src="img/collection/collection-1.png" class="collection__images-first" alt="Картинка: девушка с цветком">
@@ -90,20 +97,308 @@
     </section>
     <section class="trends">
         <div class="container">
-            <div class="trends-wrapper">
+            <div class="trends__wrapper">
                 <h2 class="trends-title">Тренды</h2>
                 <ul class="tabs">
                     <li data-target="#new" class="tabs__item tabs__item-active">Новинки</li>
                     <li data-target="#best" class="tabs__item">Лучшее</li>
                     <li data-target="#soon" class="tabs__item">Скоро</li>
                 </ul>
-                
             </div>
-            <!-- /.trends-wrapper -->
+            <div class="content">
+                <div id="new" class="content__item content__item-active">
+                    <a href="" class="content-link">
+                        <div class="content__card">
+                            <div class="content__card-image">
+                                <img src="img/trends/pic-1.png" class="content__card-image-pic" alt="Картинка: девушка">
+                            </div>
+                            <p class="content__card-text">Minimalist Style</p>
+                            <div class="content__card-info">
+                                <span class="content__card-price">$25.7</span>
+                                <img src="img/trends/shopping-cart.svg" alt="Картинка: девушка" class="content__card-image-buy">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="content-link">
+                        <div class="content__card">
+                            <div class="content__card-image">
+                                <img src="img/trends/pic-2.png" class="content__card-image-pic" alt="Картинка: девушка">
+                            </div>
+                            <p class="content__card-text">Luxury Gown </p>
+                            <div class="content__card-info">
+                                <span class="content__card-price">$30.6</span>
+                                <img src="img/trends/shopping-cart.svg" alt="Картинка: девушка" class="content__card-image-buy">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="content-link">
+                        <div class="content__card">
+                            <div class="content__card-image">
+                                <img src="img/trends/pic-3.png" class="content__card-image-pic" alt="Картинка: девушка" style="transform: scale(-1, 1);">
+                            </div>
+                            <p class="content__card-text">Full Coloristy</p>
+                            <div class="content__card-info">
+                                <span class="content__card-price">$25.7</span>
+                                <img src="img/trends/shopping-cart.svg" alt="Картинка: девушка" class="content__card-image-buy">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="content-link">
+                        <div class="content__card">
+                            <div class="content__card-image">
+                                <img src="img/trends/pic-4.png" class="content__card-image-pic" alt="Картинка: девушка">
+                            </div>
+                            <p class="content__card-text">Pinky Winky</p>
+                            <div class="content__card-info">
+                                <span class="content__card-price">$109</span>
+                                <img src="img/trends/shopping-cart.svg" alt="Картинка: девушка" class="content__card-image-buy">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="content-link">
+                        <div class="content__card">
+                            <div class="content__card-image">
+                                <img src="img/trends/pic-5.png" class="content__card-image-pic" alt="Картинка: девушка">
+                            </div>
+                            <p class="content__card-text">Holiday Vibes</p>
+                            <div class="content__card-info">
+                                <span class="content__card-price">$51.2</span>
+                                <img src="img/trends/shopping-cart.svg" alt="Картинка: девушка" class="content__card-image-buy">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="content-link">
+                        <div class="content__card">
+                            <div class="content__card-image">
+                                <img src="img/trends/pic-6.png" class="content__card-image-pic" alt="Картинка: девушка">
+                            </div>
+                            <p class="content__card-text">Swaggie Shaggy</p>
+                            <div class="content__card-info">
+                                <span class="content__card-price">$81.3</span>
+                                <img src="img/trends/shopping-cart.svg" alt="Картинка: девушка" class="content__card-image-buy">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="content-link">
+                        <div class="content__card">
+                            <div class="content__card-image">
+                                <img src="img/trends/pic-7.png" class="content__card-image-pic" alt="Картинка: девушка">
+                            </div>
+                            <p class="content__card-text">Red Formal</p>
+                            <div class="content__card-info">
+                                <span class="content__card-price">$66.8</span>
+                                <img src="img/trends/shopping-cart.svg" alt="Картинка: девушка" class="content__card-image-buy">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="content-link">
+                        <button class="content__button">
+                            <img src="img/trends/plus.svg" class="content__button-plus" alt="Иконка: плюс">
+                            Посмотреть больше коллекций
+                        </button>
+                    </a>
+                </div>
+    
+                <div id="best" class="content__item">
+                    <a href="" class="content-link">
+                        <div class="content__card">
+                            <div class="content__card-image">
+                                <img src="img/trends/pic-3.png" class="content__card-image-pic" alt="Картинка: девушка">
+                            </div>
+                            <p class="content__card-text">Minimalist Style</p>
+                            <div class="content__card-info">
+                                <span class="content__card-price">$25.7</span>
+                                <img src="img/trends/shopping-cart.svg" alt="Картинка: девушка" class="content__card-image-buy">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="content-link">
+                        <div class="content__card">
+                            <div class="content__card-image">
+                                <img src="img/trends/pic-7.png" class="content__card-image-pic" alt="Картинка: девушка">
+                            </div>
+                            <p class="content__card-text">Luxury Gown </p>
+                            <div class="content__card-info">
+                                <span class="content__card-price">$30.6</span>
+                                <img src="img/trends/shopping-cart.svg" alt="Картинка: девушка" class="content__card-image-buy">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="content-link">
+                        <div class="content__card">
+                            <div class="content__card-image">
+                                <img src="img/trends/pic-4.png" class="content__card-image-pic" alt="Картинка: девушка">
+                            </div>
+                            <p class="content__card-text">Full Coloristy</p>
+                            <div class="content__card-info">
+                                <span class="content__card-price">$25.7</span>
+                                <img src="img/trends/shopping-cart.svg" alt="Картинка: девушка" class="content__card-image-buy">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="content-link">
+                        <div class="content__card">
+                            <div class="content__card-image">
+                                <img src="img/trends/pic-6.png" class="content__card-image-pic" alt="Картинка: девушка">
+                            </div>
+                            <p class="content__card-text">Pinky Winky</p>
+                            <div class="content__card-info">
+                                <span class="content__card-price">$109</span>
+                                <img src="img/trends/shopping-cart.svg" alt="Картинка: девушка" class="content__card-image-buy">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="content-link">
+                        <div class="content__card">
+                            <div class="content__card-image">
+                                <img src="img/trends/pic-1.png" class="content__card-image-pic" alt="Картинка: девушка">
+                            </div>
+                            <p class="content__card-text">Holiday Vibes</p>
+                            <div class="content__card-info">
+                                <span class="content__card-price">$51.2</span>
+                                <img src="img/trends/shopping-cart.svg" alt="Картинка: девушка" class="content__card-image-buy">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="content-link">
+                        <div class="content__card">
+                            <div class="content__card-image">
+                                <img src="img/trends/pic-7.png" class="content__card-image-pic" alt="Картинка: девушка">
+                            </div>
+                            <p class="content__card-text">Swaggie Shaggy</p>
+                            <div class="content__card-info">
+                                <span class="content__card-price">$81.3</span>
+                                <img src="img/trends/shopping-cart.svg" alt="Картинка: девушка" class="content__card-image-buy">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="content-link">
+                        <div class="content__card">
+                            <div class="content__card-image">
+                                <img src="img/trends/pic-5.png" class="content__card-image-pic" alt="Картинка: девушка">
+                            </div>
+                            <p class="content__card-text">Red Formal</p>
+                            <div class="content__card-info">
+                                <span class="content__card-price">$66.8</span>
+                                <img src="img/trends/shopping-cart.svg" alt="Картинка: девушка" class="content__card-image-buy">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/fashion/" class="content-link">
+                        <button class="content__button">
+                            <img src="img/trends/plus.svg" class="content__button-plus" alt="Икнока: плюс">
+                            Посмотреть больше коллекций
+                        </button>
+                    </a>
+                </div>
+    
+                <div id="soon" class="content__item ">
+                    <a href="" class="content-link">
+                        <div class="content__card">
+                            <div class="content__card-image">
+                                <img src="img/trends/pic-7.png" class="content__card-image-pic" alt="Картинка: девушка">
+                            </div>
+                            <p class="content__card-text">Minimalist Style</p>
+                            <div class="content__card-info">
+                                <span class="content__card-price">$25.7</span>
+                                <img src="img/trends/shopping-cart.svg" alt="Картинка: девушка" class="content__card-image-buy">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="content-link">
+                        <div class="content__card">
+                            <div class="content__card-image">
+                                <img src="img/trends/pic-6.png" class="content__card-image-pic" alt="Картинка: девушка">
+                            </div>
+                            <p class="content__card-text">Luxury Gown </p>
+                            <div class="content__card-info">
+                                <span class="content__card-price">$30.6</span>
+                                <img src="img/trends/shopping-cart.svg" alt="Картинка: девушка" class="content__card-image-buy">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="content-link">
+                        <div class="content__card">
+                            <div class="content__card-image">
+                                <img src="img/trends/pic-5.png" class="content__card-image-pic" alt="Картинка: девушка">
+                            </div>
+                            <p class="content__card-text">Full Coloristy</p>
+                            <div class="content__card-info">
+                                <span class="content__card-price">$25.7</span>
+                                <img src="img/trends/shopping-cart.svg" alt="Картинка: девушка" class="content__card-image-buy">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="content-link">
+                        <div class="content__card">
+                            <div class="content__card-image">
+                                <img src="img/trends/pic-4.png" class="content__card-image-pic" alt="Картинка: девушка">
+                            </div>
+                            <p class="content__card-text">Pinky Winky</p>
+                            <div class="content__card-info">
+                                <span class="content__card-price">$109</span>
+                                <img src="img/trends/shopping-cart.svg" alt="Картинка: девушка" class="content__card-image-buy">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="content-link">
+                        <div class="content__card">
+                            <div class="content__card-image">
+                                <img src="img/trends/pic-3.png" class="content__card-image-pic" alt="Картинка: девушка">
+                            </div>
+                            <p class="content__card-text">Holiday Vibes</p>
+                            <div class="content__card-info">
+                                <span class="content__card-price">$51.2</span>
+                                <img src="img/trends/shopping-cart.svg" alt="Картинка: девушка" class="content__card-image-buy">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="content-link">
+                        <div class="content__card">
+                            <div class="content__card-image">
+                                <img src="img/trends/pic-2.png" class="content__card-image-pic" alt="Картинка: девушка">
+                            </div>
+                            <p class="content__card-text">Swaggie Shaggy</p>
+                            <div class="content__card-info">
+                                <span class="content__card-price">$81.3</span>
+                                <img src="img/trends/shopping-cart.svg" alt="Картинка: девушка" class="content__card-image-buy">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="content-link">
+                        <div class="content__card">
+                            <div class="content__card-image">
+                                <img src="img/trends/pic-1.png" class="content__card-image-pic" alt="Картинка: девушка">
+                            </div>
+                            <p class="content__card-text">Red Formal</p>
+                            <div class="content__card-info">
+                                <span class="content__card-price">$66.8</span>
+                                <img src="img/trends/shopping-cart.svg" alt="Картинка: девушка" class="content__card-image-buy">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="content-link">
+                        <button class="content__button">
+                            <img src="img/trends/plus.svg" class="content__button-plus" alt="Икнока: плюс">
+                            Посмотреть больше коллекций
+                        </button>
+                    </a>
+                </div>
+    
+                <!--<ul class="content">
+                        <li id="new" class="content__item content__item-active">Новинки</li>
+                        <li id="best" class="content__item">Лучшее</li>
+                        <li id="soon" class="content__item">Скоро</li>
+                    </ul>-->
+            </div>
+            <!-- /.trend__content -->
+    
         </div>
         <!-- /.container -->
     </section>
+    <!-- /.trends -->
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 
