@@ -612,6 +612,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 48px;
 }
 
 .trends-title {
@@ -639,10 +640,10 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 285px;
+  margin: 0;
 }
 
 .tabs__item {
-  font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
