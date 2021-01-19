@@ -892,6 +892,11 @@ template {
   color: #183B56;
 }
 
+.swiper-container {
+  width: 600px;
+  height: 300px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 992px;
