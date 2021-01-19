@@ -37,6 +37,7 @@
       &_button
         display: none
   .trends
+    margin-bottom: 35px
     &__wrapper
       flex-direction: column
     &-title
@@ -48,3 +49,50 @@
     &__item
       &-active
         justify-content: space-evenly
+.swiper-container
+  max-width: 630px
+  height: 410px
+hr
+  display: none
+@media (max-width: 675px)
+  .card
+    padding-left: 25px
+  .container
+    max-width: 576px
+  .collection
+    &__images
+      width: 95%
+      &-first
+        width: 95%
+        margin-right: 0
+      &-other
+        width: 95%
+    &__discription
+      width: 90%
+@media (max-width: 480px)
+  .container
+    width: 350px
+  .card
+    &__block
+      text-align: center
+      padding-top: 300px
+    &__title
+      max-width: 244px
+      font-size: 32px
+      line-height: 40px
+      height: 120px
+      margin: auto
+      margin-top: 22px
+      margin-bottom: 20px
+    &__text
+      margin-bottom: 24px
+    &__button
+      margin-bottom: 37px
+    &__frame
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      padding-bottom: 20px
+    &-item
+      margin-right: 16px
+      margin-bottom: 20px

@@ -10,7 +10,8 @@ $(document).ready(function() {
         $(this).addClass('tabs__item-active');
     });
      AOS.init();
-        var mySwiper = new Swiper('.swiper-container', {
+       
+  var mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
   loop: true,
 
@@ -19,10 +20,12 @@ $(document).ready(function() {
     el: '.swiper-pagination',
   },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+   keyboard: {
+    enabled: true,
+  }, 
+  autoplay: {
+        delay: 7000,
+        disableOnInteraction: false,
+      }, 
 })
 });
