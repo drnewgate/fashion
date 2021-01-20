@@ -3,7 +3,6 @@
   border-radius: 8px
   background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%) ,url(../img/header-image.jpg)
   padding: 68px 0 0 102px
-  margin: auto
   margin-bottom: 120px
   &__tag
     font-style: normal
@@ -19,6 +18,7 @@
     max-width: 425px
     height: 205px
     font-family: HK Grotesk
+    font-feature-settings: 'locl' 0
     font-style: normal
     font-weight: bold
     font-size: 56px
@@ -47,21 +47,15 @@
     border-radius: 8px
     color: $secondary
     cursor: pointer
-    &:hover
-      background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(24,59,86,1) 34%, rgba(37,164,190,1) 98%)
-      background-size: 200% auto
-      box-shadow: 0 0 20px rgba(0, 0, 0, .1)
-      transition: .5s
-      background-position: center right
   &__frame
-    min-width: 465px
+    max-width: 465px
     display: flex
     padding-bottom: 46px
+    justify-content: space-between
   &-item
     display: flex
     justify-content: center
     align-items: center
-    margin-right: 30px
     &-text
       justify-content: center
       font-family: HK Grotesk
