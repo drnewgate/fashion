@@ -896,6 +896,142 @@ template {
   overflow: hidden;
 }
 
+.modal__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__dialog {
+  max-width: 500px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 33px 64px;
+  background-color: #183B56;
+  color: #fff;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 8px;
+  z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  overflow: auto;
+}
+
+.modal__dialog--visible {
+  max-height: 95%;
+  visibility: visible;
+  opacity: 1;
+  position: fixed;
+  overflow-y: auto;
+}
+
+.modal__close {
+  position: absolute;
+  right: 18px;
+  top: 17px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 15px;
+  margin-top: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal__input {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 0;
+  background: #FFFFFF;
+  border-radius: 4px;
+  border: none;
+  padding: 0 15px;
+  height: 50px;
+  display: block;
+}
+
+.modal__message {
+  width: 100%;
+  min-width: 123px;
+  margin-top: 15px;
+}
+
+.modal__info {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E0E0E0;
+}
+
+.modal__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal__footer-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+
+.modal__button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #1565D8;
+  padding: 10px 12px;
+  background-color: #fff;
+  border-color: #1565D8;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form {
+  width: 320px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 992px;

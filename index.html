@@ -28,7 +28,7 @@
                     <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Тренды</a></li>
                     <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Отзывы</a></li>
                     <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Контакты</a></li>
-                    <li class="navbar-menu__item"><button class="navbar-top_button">Войти</button></li>
+                    <li class="navbar-menu__item"><button class="navbar-top_button" data-toggle="modal" data-href="#booking-modal">Войти</button></li>
                 </ul>
                 
                 <button class="navbar-menu__button">
@@ -460,8 +460,45 @@
         <!-- /.container -->
     </section>
     <hr>
+    <section class="histori">
+        <div class="container">
+            <div class="fushun">
+
+            </div>
+            <!-- /.fushun -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <div class="modal" id="booking-modal">
+        <div class="modal__overlay"></div>
+        <!-- /.modal__overlay -->
+        <div class="modal__dialog">
+            <a href="" class="modal__close">
+                <img src="img/close.svg" alt="icon: close" />
+            </a>
+            <h3 class="modal__title modal__title--mb-1">Зарегистрироваться</h3>
+            <form action="send.php" method="POST" class="modal__form form">
+                <div class="modal__input-fild">
+                    <input type="text" class="input modal__input" placeholder="Введите имя*" name="name" required
+                        minlength="2" />
+                    <input type="tel" class="input modal__input" placeholder="Введите номер телефона*" name="phone" required
+                        minlength="18" maxlength="18" />
+                    <input type="email" class="input modal__input" placeholder="Email*" name="email" required />
+                </div>
+                <div class="modal__footer-item">
+                    <button class="button modal__button" type="submit">Отправить</button>
+                    <span class="modal__info">*обязательное поле</span>
+                </div>
+            </form>
+        </div>
+        <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
