@@ -36,6 +36,18 @@
     &-top
       &_button
         display: none
+  .card
+    padding-left: 45px
+    &__frame
+      width: 80%
+    &__text
+      width: 450px
+    &-item
+      margin-right: 21px
+      &__text
+        line-height: 20px
+        font-size: 16px
+        max-width: 119px
   .trends
     margin-bottom: 35px
     &__wrapper
@@ -46,17 +58,23 @@
   .tabs
     margin: auto
   .content
+    &-link
+      width: 40%
     &__item
       &-active
         justify-content: space-evenly
-.swiper-container
-  max-width: 630px
-  height: 410px
-hr
-  display: none
+    &__button
+      width: 100%
+  .swiper-container
+    max-width: 630px
+    height: 410px
+  hr
+    display: none
 @media (max-width: 675px)
   .card
-    padding-left: 25px
+    padding-left: 12%
+    &__frame
+      width: 83%
   .container
     max-width: 545px
   .collection
@@ -69,6 +87,12 @@ hr
         width: 95%
     &__discription
       width: 90%
+  .content
+    &__card
+      &-image
+        width: 217px
+        &-pic
+          width: 100%
 @media (max-width: 480px)
   .container
     width: 350px
