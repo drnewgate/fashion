@@ -46,22 +46,35 @@ var mySwiper = new Swiper('.stories-swiper', {
     disabledClass: 'stories-slider-button--disabled',
   },
 })
-var modalButton = $('[data-toggle=modal]');
-  var closeModalButton = $('.modal__close');
-  modalButton.on('click', openModal);
-  closeModalButton.on('click', closeModal);
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener('click', function () {
+  console.log('Клик по кнопке');
+  document.querySelector(".navbar-menu").classList.toggle('navbar-menu--visible')
+})
 
-      function openModal() {
-        var targetModal = $(this).attr('data-href');
-        $(targetModal).find('.modal__overlay').addClass('modal__overlay--visible');
-        $(targetModal).find('.modal__dialog').addClass('modal__dialog--visible');
-      }
-      function closeModal(event) {
-        event.preventDefault();
-        var modalOverlay = $('.modal__overlay');
-        var modalDialog = $('.modal__dialog');
-        modalOverlay.removeClass('modal__overlay--visible')
-        modalDialog.removeClass('modal__dialog--visible')
+var closeNavbar = document.querySelector(".navbar-menu__close--visible");
+closeNavbar.addEventListener('click', function () {
+  console.log('Клик по кнопке закрыть');
+  document.querySelector(".navbar-menu").classList.toggle('navbar-menu--visible')
+})
+
+var modalButton = $('[data-toggle=modal]');
+var closeModalButton = $('.modal__close');
+modalButton.on('click', openModal);
+closeModalButton.on('click', closeModal);
+
+function openModal() {
+  var modalOverlay = $('.modal__overlay');
+  var modalDialog = $('.modal__dialog');
+  modalOverlay.addClass('modal__overlay--visible');
+  modalDialog.addClass('modal__dialog--visible');
+}
+function closeModal(event) {
+  event.preventDefault();
+  var modalOverlay = $('.modal__overlay');
+  var modalDialog = $('.modal__dialog');
+  modalOverlay.removeClass('modal__overlay--visible');
+  modalDialog.removeClass('modal__dialog--visible');
 
       }
       //Обработка форм

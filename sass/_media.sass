@@ -7,6 +7,30 @@
         margin-right: 20px
     &__discription
       margin-left: 20px
+  .subscribe
+    &-wrapper
+      width: 100%
+  .footer
+    &-wrapper
+      grid-template-columns: 250px repeat(4, minmax(165px, min-content))
+      column-gap: 20px
+@media ( max-width: 1000px )
+  .footer
+    padding: 64px 0 84px
+    &-wrapper
+      padding: 0 20px 0 9px
+      grid-template-columns: 253px repeat(2, minmax(163px, max-content))
+      column-gap: 30px
+    &-main
+      grid-row: span 2
+    &-list
+      &__link
+        &:hover
+          color: inherit
+    &-social-networks
+      &__image
+        &:hover
+          background-color: transparent
 @media ( min-width: 992px )
   a:hover
     color: #3399cc
@@ -42,9 +66,83 @@
         margin-bottom: 24px
       &-button
         padding-left: 0
+  .subscribe
+    &-wrapper
+      flex-direction: column
+      text-align: center
+      padding-top: 72px
+      padding-bottom: 80px
+    &__info
+      margin-bottom: 56px
 @media (max-width: 769px)
   .container
     max-width: 672px
+  .header
+    padding-top: 26px
+    padding-bottom: 18px
+    margin-bottom: 30px
+    background-color: #fff
+    &__mobile
+      &_fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 100
+    &__container
+      width: 650px
+    &__wrapper
+      flex-wrap: wrap
+    &__button
+      &--mobile
+        &_hidden
+          display: none
+        &_visible
+          display: block
+          margin: auto
+  .navbar
+    &-menu
+      display: none
+      position: fixed
+      width: 95%
+      background-color: #edebed
+      top: 10px
+      box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
+      right: 0
+      left: 0
+      margin: auto
+      padding: 36px 24px
+      max-height: 100%
+      overflow-y: auto
+      &__item
+        margin-bottom: 35px
+        width: 100%
+      &--visible
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+      &__close
+        &--visible
+          display: block
+          position: absolute
+          right: 19px
+          top: 16px
+          text-decoration: none
+  .menu
+    &-button
+      display: flex
+      width: 22px
+      height: 18px
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      background-color: #fff
+      cursor: pointer
+      &__line
+        width: 22px
+        height: 2px
+        background-color: #3A4C66
   .card
     max-width: 728px
     height: 624px
@@ -60,13 +158,8 @@
       margin-bottom: 41px
     &__frame
       padding-bottom: 36px
-  .navbar
-    &-menu
-      display: none
-    &-top
-      &_button
-        display: none
   .card
+    margin-top: 76px
     padding-left: 45px
     &__frame
       width: 80%
@@ -98,6 +191,41 @@
     height: 410px
   hr
     display: none
+  .footer
+    &-wrapper
+      padding: 0
+      grid-template-columns: 230px repeat(2, minmax(165px, max-content))
+      column-gap: 20px
+@media ( max-width: 690px )
+  .footer
+    padding: 48px 0 70px
+    &-wrapper
+      padding: 0 19px
+      grid-template-columns: 1fr 1fr
+      column-gap: 0
+      row-gap: 30px
+    &-main
+      grid-row: 3 / 4
+      grid-column: span 2
+      max-width: 263px
+      margin-top: 35px
+    &-logo
+      margin-bottom: 11px
+    &-text
+      margin: 0 0 21px
+      font-size: 14px
+      line-height: 24px
+    &__title
+      margin: 0 0 20px
+      font-size: 16px
+      line-height: 22px
+    &-list
+      &__item
+        margin-bottom: 15px
+        font-size: 14px
+        line-height: 20px
+        &:nth-last-child(1)
+          margin-bottom: 0
 @media (max-width: 675px)
   .card
     padding-left: 12%
@@ -121,6 +249,8 @@
         width: 217px
         &-pic
           width: 100%
+  .footer
+    padding: 48px 0 70px
 @media (max-width: 481px)
   .container
     width: 350px
@@ -230,3 +360,29 @@
     &-container
       max-width: 280px
       height: 550px
+  .subscribe
+    &-wrapper
+      padding-top: 64px
+      padding-bottom: 120px
+  .search
+    width: 100%
+    height: 50px
+    &__button
+      position: relative
+      width: 100%
+      margin: 0
+      margin-top: 10px
+  .footer
+    &-wrapper
+      grid-template-columns: 100%
+    &-main
+      grid-column: 1 / 2
+      grid-row: 5 / 6
+  .modal
+    &__dialog
+      width: 300px
+      padding: 30px 20px
+@media (max-width: 335px)
+  .subscribe
+    &__container
+      width: 280px

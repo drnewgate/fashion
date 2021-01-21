@@ -1,54 +1,50 @@
-.logo
-  margin-left: 10px
-.navbar
-  &-top
+.header
+  padding-top: 26px
+  padding-bottom: 26px
+  margin-bottom: 36px
+  &__logo
+    &_img
+      width: 90px
+  &__wrapper
     display: flex
-    align-items: center
     justify-content: space-between
-    margin-top: 26px
-    margin-bottom: 62px
-    &_button
-      font-style: normal
-      font-weight: bold
-      font-size: 16px
-      line-height: 22px
-      text-align: center
-      color: #1565D8
-      padding: 10px 12px
-      background-color: #fff
-      border-color: #1565D8
-      border-radius: 8px
-      cursor: pointer
-  &-menu
-    display: flex
-    margin: 0
-    padding: 0
-    min-width: 520px
-    list-style: none
     align-items: center
-    justify-content: space-between
-    margin-left: auto
-    font-style: normal
-    font-weight: 600
+  &__button
+    padding: 13px 24px
+    font-weight: bold
     font-size: 16px
     line-height: 22px
+    text-align: center
+    color: #1565D8
+    border: 2px solid #1565D8
+    filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1))
+    border-radius: 8px
+    background-color: transparent
+    cursor: pointer
+    transition: .2s
+    &--mobile
+      &_hidden
+        display: none
+        &_visible
+          display: none
+.navbar
+  &-menu
+    list-style-type: none
+    margin: 0
+    padding: 0
+    display: flex
+    align-items: center
+    margin-left: auto
+    &_button
+      display: none
     &__link
       text-decoration: none
       color: $primary
-    &__item
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
       padding-right: 40px
-    &__button
-      display: none
-      width: 16px
-      height: 11px
-      padding: 0
-      align-items: center
-      justify-content: space-between
-      flex-direction: column
-      border: none
-      background-color: #fff
-      cursor: pointer
-      &--line
-        width: 16px
-        height: 1px
-        background-color: #333333
+    &__close
+      &--visible
+        display: none

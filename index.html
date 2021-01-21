@@ -15,34 +15,49 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-
-            <div class="navbar-top">
-                <a href="/fashion/" class="logo">
-                    <img src="img/logo.svg" alt="Logo: Ehya" class="logo__image" />
-                </a>
-                <ul class="navbar-menu">
-                    <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Главная</a></li>
-                    <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Новинки</a></li>
-                    <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Тренды</a></li>
-                    <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Отзывы</a></li>
-                    <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Контакты</a></li>
-                    <li class="navbar-menu__item"><button class="navbar-top_button" data-toggle="modal"
-                            data-href="#booking-modal">Войти</button></li>
-                </ul>
-
-                <button class="navbar-menu__button">
-                    <span class="navbar-menu__button--line"></span>
-                    <span class="navbar-menu__button--line"></span>
-                    <span class="navbar-menu__button--line"></span>
-                </button>
-            </div>
-            <!-- /.navbar-top -->
+<div id="header" class="header header__mobile_fixed">
+    <div class="container header__container">
+        <div class="header__wrapper">
+            <a href="index.html" class="header__logo">
+                <img class="header__logo_img" src="img/logo.svg" alt="Logo: ehya">
+            </a>
+            <ul id="menu" class="navbar-menu">
+                <li class="navbar-menu__item">
+                    <a href="#hero" class="navbar-menu__link">Главная</a>
+                </li>
+                <li class="navbar-menu__item">
+                    <a href="#collection" class="navbar-menu__link">Новинки</a>
+                </li>
+                <li class="navbar-menu__item">
+                    <a href="#trending" class="navbar-menu__link">Тренды</a>
+                </li>
+                <li class="navbar-menu__item">
+                    <a href="#reviews" class="navbar-menu__link">Отзывы</a>
+                </li>
+                <li class="navbar-menu__item">
+                    <a href="#subscribe" class="navbar-menu__link">Контакты</a>
+                </li>
+                <li class="navbar-menu__item">
+                    <button data-toggle="modal" class="header__button header__button--mobile_visible">Войти</button>
+                </li>
+                <li>
+                    <a class="navbar-menu__close navbar-menu__close--visible" href="#"><img src="img/close.svg"
+                            alt=""></a>
+                </li>
+            </ul>
+            <!-- /.nav__links -->
+            <button class="header__button header__button--mobile_hidden">Войти</button>
+            <button class="menu-button navbar-menu_button">
+                <span class="menu-button__line"></span>
+                <span class="menu-button__line"></span>
+                <span class="menu-button__line"></span>
+            </button>
         </div>
-        <!-- /.header -->
+        <!-- /.header__wrapper -->
     </div>
-    <!-- /.container -->
+    <!-- /.container-->
+</div>
+<!-- /.header -->
     <section class="card banner_contain">
         <div class="card__block">
             <span class="card__tag"># READY TO BE COOL</span>
@@ -494,113 +509,7 @@
         </div>
         <!-- /.container -->
     </section>
-    <section id="stories" class="stories">
-        <div class="container stories__container">
-            <div class="stories-wrapper">
-                <div class="stories__info">
-                    <a href="#" class="stories__hashtag">ИСТОРИИ</a>
-                    <h2 class="stories__title" lang="en"><span class="stories__title_visible">Это</span> История Fashun</h2>
-                    <p class="stories__subtitle">Ознакомьтесь с нашим рассказом о&nbsp;моде. Написано нашим дизайнером
-                        и&nbsp;специалистом.</p>
-                    <div class="stories-slider-navigations">
-                        <div class="stories-slider-button stories-slider-button--prev" role="button">
-                            <img src="img/btn-prev.svg" alt="">
-                        </div>
-                        <div class="stories-slider-button stories-slider-button--next" role="button"><img
-                                src="img/btn-next.svg" alt=""></div>
-                    </div>
-                    <!-- /.stories-slider-navigations -->
-                </div>
-                <!-- /.stories__info -->
-                <!-- <div class="stories__items"> -->
-                <div class="swiper-container stories-swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide swiper-slide-1">
-                            <div class="stories-slider_item">
-                                <div class="stories-slider_left">
-                                    <img class="stories-slider_img" src="img/stories-img-1.jpg" alt="">
-                                    <div class="stories-slider_info">
-                                        <h3 class="stories-slider_title" lang="en">Mix & Match Style 01: повседневный и
-                                            формальный стиль</h3>
-                                        <a href="#" class="stories-slider_next">Читать далее</a>
-                                    </div>
-                                    <!-- /.stories-slider__info -->
-                                </div>
-                                <!-- /.stories-slider__left -->
-                                <div class="stories-slider_right">
-                                    <img class="stories-slider_img" src="img/stories-img-2.jpg" alt="">
-                                    <div class="stories-slider_info">
-                                        <h3 class="stories-slider_title" lang="en">Лайфхак: Купите одежду Thrifft на
-                                            воскресном рынке</h3>
-                                        <a href="#" class="stories-slider_next">Читать далее</a>
-                                    </div>
-                                    <!-- /.stories-slider__info -->
-                                </div>
-                                <!-- /.stories-slider__right -->
-                            </div>
-                            <!-- /.stories__slider_item -->
-                        </div>
-                        <div class="swiper-slide swiper-slide-2">
-                            <div class="stories-slider_item">
-                                <div class="stories-slider_left">
-                                    <img class="stories-slider_img" src="img/stories-img-2.jpg" alt="">
-                                    <div class="stories-slider_info">
-                                        <h3 class="stories-slider_title" lang="en">Mix & Match Style 01: повседневный и
-                                            формальный стиль</h3>
-                                        <a href="#" class="stories-slider_next">Читать далее</a>
-                                    </div>
-                                    <!-- /.stories-slider__info -->
-                                </div>
-                                <!-- /.stories-slider__left -->
-                                <div class="stories-slider_right">
-                                    <img class="stories-slider_img" src="img/stories-img-2.jpg" alt="">
-                                    <div class="stories-slider_info">
-                                        <h3 class="stories-slider_title" lang="en">Лайфхак: Купите одежду Thrifft на
-                                            воскресном рынке</h3>
-                                        <a href="#" class="stories-slider_next">Читать далее</a>
-                                    </div>
-                                    <!-- /.stories-slider__info -->
-                                </div>
-                                <!-- /.stories-slider__right -->
-                            </div>
-                            <!-- /.stories__slider_item -->
-                        </div>
-                        <div class="swiper-slide swiper-slide-3">
-                            <div class="stories-slider_item">
-                                <div class="stories-slider_left">
-                                    <img class="stories-slider_img" src="img/stories-img-2.jpg" alt="">
-                                    <div class="stories-slider_info">
-                                        <h3 class="stories-slider_title" lang="en">Mix & Match Style 01: повседневный и
-                                            формальный стиль</h3>
-                                        <a href="#" class="stories-slider_next">Читать далее</a>
-                                    </div>
-                                    <!-- /.stories-slider__info -->
-                                </div>
-                                <!-- /.stories-slider__left -->
-                                <div class="stories-slider_right">
-                                    <img class="stories-slider_img" src="img/stories-img-1.jpg" alt="">
-                                    <div class="stories-slider_info">
-                                        <h3 class="stories-slider_title" lang="en">Лайфхак: Купите одежду Thrifft на
-                                            воскресном рынке</h3>
-                                        <a href="#" class="stories-slider_next">Читать далее</a>
-                                    </div>
-                                    <!-- /.stories-slider__info -->
-                                </div>
-                                <!-- /.stories-slider__right -->
-                            </div>
-                            <!-- /.stories__slider_item -->
-                        </div>
-                    </div>
-                </div>
-                <!-- </div> -->
-                <!-- /.stories__items -->
-            </div>
-            <!-- /.stories-wrapper -->
-        </div>
-        <!-- /.container -->
-    </section>
+    
     <section id="subscribe" class="subscribe">
         <div class="container subscribe__container">
             <div class="subscribe-wrapper">
@@ -619,6 +528,110 @@
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-main">
+                    <a href="#" class="footer-logo">
+                        <img src="img/logo.svg" alt="Logo: Ehya" class="footer-logo__image">
+                    </a>
+                    <p class="footer-text">
+                        Интернет-магазин брендовой одежды с оплатой онлайн
+                    </p>
+                    <div class="footer-social-networks">
+                        <a href="https://www.google.com/" target="_blank" class="footer-social-networks__link google">
+                            <img src="img/social/google.svg" alt="Icon: google" class="footer-social-networks__image">
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="footer-social-networks__link twitter">
+                            <img src="img/social/twitter.svg" alt="Icon: twitter" class="footer-social-networks__image">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer-social-networks__link instagram">
+                            <img src="img/social/instagram.svg" alt="Icon: instagram" class="footer-social-networks__image">
+                        </a>
+                        <a href="https://www.linkedin.cn/" target="_blank" class="footer-social-networks__link linkedin">
+                            <img src="img/social/linkedin.svg" alt="Icon: linkedin" class="footer-social-networks__image">
+                        </a>
+                    </div>
+                    <!-- /.footer-social-networks -->
+                </div>
+                <!-- /.footer-main -->
+                <div class="footer-list-wrapper">
+                    <h2 class="footer__title">Навигация</h2>
+                    <ul class="footer-list">
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Новая коллекция</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Трендовая одежда</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Истории Fashun</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Отзывы клиентов</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Вся одежда</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.footer-list-wrapper -->
+                <div class="footer-list-wrapper">
+                    <h2 class="footer__title">Сервисы</h2>
+                    <ul class="footer-list">
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Рассрочка на 6 мес</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Кредит на 12 мес</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Доставка по РФ</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Возврат покупок</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Акции и кэшбек</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.footer-list-wrapper -->
+                <div class="footer-list-wrapper">
+                    <h2 class="footer__title">Компания</h2>
+                    <ul class="footer-list">
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Об Ehya</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Правила сайта</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Обработка данных</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Вакансии</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.footer-list-wrapper -->
+                <div class="footer-list-wrapper">
+                    <h2 class="footer__title">Контакты</h2>
+                    <ul class="footer-list">
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Группа Фейсбук</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Канал Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.footer-list-wrapper -->
+            </div>
+            <!-- /.footer-wrapper -->
+        </div>
+        <!-- /.container -->
+    </footer>
     <div class="modal" id="booking-modal">
         <div class="modal__overlay"></div>
         <!-- /.modal__overlay -->
@@ -626,7 +639,7 @@
             <a href="" class="modal__close">
                 <img src="img/close.svg" alt="icon: close" />
             </a>
-            <h3 class="modal__title modal__title--mb-1">Зарегистрироваться</h3>
+            <h3 class="modal__title modal__title--mb-1">Авторизация</h3>
             <form action="send.php" method="POST" class="modal__form form">
                 <div class="modal__input-fild">
                     <input type="text" class="input modal__input" placeholder="Введите имя*" name="name" required
