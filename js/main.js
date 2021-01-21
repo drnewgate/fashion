@@ -27,6 +27,24 @@ $(document).ready(function() {
         delay: 7000,
         disableOnInteraction: false,
       }, 
+        // Navigation arrows
+  navigation: {
+    nextEl: '.stories-slider-button--next',
+    prevEl: '.stories-slider-button--prev', 
+    disabledClass: 'stories-slider-button--disabled',
+  },
+})
+var mySwiper = new Swiper('.stories-swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: false,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.stories-slider-button--next',
+    prevEl: '.stories-slider-button--prev', 
+    disabledClass: 'stories-slider-button--disabled',
+  },
 })
 var modalButton = $('[data-toggle=modal]');
   var closeModalButton = $('.modal__close');
