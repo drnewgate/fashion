@@ -406,6 +406,7 @@ template {
 
 .header__logo_img {
   width: 90px;
+  padding-left: 10px;
 }
 
 .header__wrapper {
@@ -422,6 +423,7 @@ template {
 
 .header__button {
   padding: 13px 24px;
+  margin-right: 10px;
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
@@ -481,7 +483,7 @@ template {
   border-radius: 8px;
   background: -webkit-gradient(linear, right top, left top, color-stop(67.34%, rgba(238, 238, 238, 0.0001)), to(#E8EAE9)), url(../img/header-image.jpg);
   background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%), url(../img/header-image.jpg);
-  padding: 68px 0 0 102px;
+  padding: 68px 0 0 107px;
   margin: auto;
   margin-bottom: 120px;
 }
@@ -518,11 +520,11 @@ template {
   font-size: 20px;
   line-height: 36px;
   margin: 0;
-  margin-bottom: 52px;
+  margin-bottom: 47px;
 }
 
 .card__button {
-  margin-bottom: 52px;
+  margin-bottom: 48px;
   padding: 15px 40px;
   font-style: normal;
   font-weight: bold;
@@ -536,7 +538,7 @@ template {
 }
 
 .card__frame {
-  max-width: 465px;
+  max-width: 457px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -562,7 +564,7 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: HK Grotesk;
+  font-family: "HKGrotesk-Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -588,12 +590,12 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 670px;
+  max-width: 670px;
 }
 
 .collection__images-first {
   border-radius: 8px;
-  width: 100%;
+  width: 96%;
   height: 490px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -623,13 +625,14 @@ template {
 }
 
 .collection__discription {
+  padding-top: 10px;
   margin-left: 57px;
   width: 40%;
 }
 
 .collection__discription-title {
   margin: 0;
-  font-family: HK Grotesk;
+  font-family: "HKGrotesk-Bold";
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -646,7 +649,7 @@ template {
   font-size: 20px;
   line-height: 36px;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 42px;
 }
 
 .collection__discription-button {
@@ -657,6 +660,7 @@ template {
   color: #1565D8;
   border: none;
   background: transparent;
+  padding: 0;
 }
 
 .arrow {
@@ -678,7 +682,7 @@ template {
 }
 
 .trends-title {
-  font-family: HK Grotesk;
+  font-family: "HKGrotesk-Bold";
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -752,10 +756,13 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-left: 10px;
 }
 
 .content__card-text {
   display: block;
+  margin: 0;
+  padding-left: 15px;
   font-family: HK Grotesk;
   font-style: normal;
   font-weight: bold;
@@ -763,7 +770,6 @@ template {
   line-height: 32px;
   letter-spacing: 0.2px;
   color: #183B56;
-  margin: 0;
 }
 
 .content__card-price {
@@ -798,6 +804,7 @@ template {
 .content__button {
   width: 260px;
   height: 350px;
+  padding-top: 11px;
   background: #1565D8;
   border-radius: 8px;
   display: -webkit-box;
@@ -827,13 +834,20 @@ template {
 }
 
 .content__button-plus {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+}
+
+.content__button-text {
+  font-family: "HKGrotesk-Bold";
+  font-size: 24px;
+  line-height: 32px;
+  padding-top: 15px;
 }
 
 .content-link {
   text-decoration: none;
   height: 440px;
-  margin-bottom: 40px;
+  margin-bottom: 49px;
 }
 
 .review {
@@ -857,7 +871,7 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 24px;
+  margin-bottom: 38px;
 }
 
 .review-content {
@@ -873,7 +887,7 @@ template {
 .review-content__text {
   max-width: 800px;
   margin: 0;
-  font-family: HK Grotesk;
+  font-family: "HKGrotesk-Medium";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -881,6 +895,7 @@ template {
   text-align: center;
   letter-spacing: 0.133333px;
   color: #183B56;
+  overflow-y: auto;
 }
 
 .review-content-client {
@@ -1036,10 +1051,6 @@ template {
   border-color: #1565D8;
   border-radius: 8px;
   cursor: pointer;
-}
-
-form {
-  width: 320px;
 }
 
 .stories {
@@ -1441,6 +1452,7 @@ form {
 @media (max-width: 1000px) {
   .footer {
     padding: 64px 0 84px;
+    padding-left: 5%;
   }
   .footer-wrapper {
     padding: 0 20px 0 9px;
@@ -1499,7 +1511,7 @@ form {
     margin: auto;
   }
   .collection__discription {
-    width: 100%;
+    width: 90%;
     margin: auto;
     margin-top: 40px;
   }
@@ -1528,9 +1540,6 @@ form {
 }
 
 @media (max-width: 769px) {
-  .container {
-    max-width: 672px;
-  }
   .header {
     padding-top: 26px;
     padding-bottom: 18px;
@@ -1545,7 +1554,7 @@ form {
     z-index: 100;
   }
   .header__container {
-    width: 650px;
+    width: 660px;
   }
   .header__wrapper {
     -ms-flex-wrap: wrap;
@@ -1557,6 +1566,9 @@ form {
   .header__button--mobile_visible {
     display: block;
     margin: auto;
+  }
+  .header__logo {
+    padding-left: 10px;
   }
   .navbar-menu {
     display: none;
@@ -1572,6 +1584,16 @@ form {
     padding: 36px 24px;
     max-height: 100%;
     overflow-y: auto;
+    border-radius: 8px;
+  }
+  .navbar-menu__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-right: 0;
   }
   .navbar-menu__item {
     margin-bottom: 35px;
@@ -1628,38 +1650,47 @@ form {
     background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%), url(../img/header-image-768.jpg) no-repeat;
     -o-object-fit: contain;
        object-fit: contain;
-    padding-top: 36px;
+    padding-top: 39px;
+    padding-left: 41px;
     margin-bottom: 80px;
+    margin-top: 104px;
   }
   .card__title {
-    margin: 24px 0 20px 0;
+    margin: 30px 0 20px 0;
+    font-size: 48px;
+    line-height: 60px;
+    height: 179px;
   }
   .card__text {
+    max-width: 424px;
     margin-bottom: 36px;
+    font-size: 18px;
+    line-height: 32px;
   }
   .card__button {
     margin-bottom: 41px;
   }
   .card__frame {
     padding-bottom: 36px;
+    width: 64%;
   }
-  .card {
-    margin-top: 76px;
-    padding-left: 45px;
-  }
-  .card__frame {
-    width: 80%;
-  }
-  .card__text {
-    max-width: 450px;
-  }
-  .card__text__text {
+  .card__frame__text {
     line-height: 20px;
     font-size: 16px;
     max-width: 119px;
   }
+  .collection__images-first {
+    width: 99%;
+  }
+  .collection__discription {
+    width: 84%;
+    margin-top: 24px;
+  }
+  .collection__discription-title {
+    margin-bottom: 30px;
+  }
   .trends {
-    margin-bottom: 35px;
+    margin-bottom: 53px;
   }
   .trends__wrapper {
     -webkit-box-orient: vertical;
@@ -1674,8 +1705,12 @@ form {
   .tabs {
     margin: auto;
   }
+  .content__card-image {
+    height: 366px;
+  }
   .content-link {
-    width: 40%;
+    width: 34%;
+    padding-left: 15px;
   }
   .content__item-active {
     -webkit-box-pack: space-evenly;
@@ -1685,9 +1720,12 @@ form {
   .content__button {
     width: 100%;
   }
+  .review-icon {
+    padding-left: 25px;
+  }
   .swiper-container {
     max-width: 630px;
-    height: 410px;
+    height: 419px;
   }
   hr {
     display: none;
@@ -1964,6 +2002,20 @@ form {
 }
 
 @media (max-width: 335px) {
+  .container {
+    max-width: 310px;
+  }
+  .subscribe__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .subscribe__subtitle {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .subscribe__info {
+    max-width: 300px;
+  }
   .subscribe__container {
     width: 280px;
   }
