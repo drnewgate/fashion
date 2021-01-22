@@ -67,6 +67,27 @@
         margin-bottom: 24px
       &-button
         padding-left: 0
+  .stories
+    margin-bottom: 60px
+    &-wrapper
+      display: block
+      padding-top: 62px
+    &__info
+      width: 100%
+      text-align: center
+      margin-bottom: 36px
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__title
+      margin-bottom: 16px
+      margin-top: 24px
+    &__subtitle
+      width: 568px
+      margin: auto
+      margin-bottom: 36px
+    &__items
+      margin: auto
   .subscribe
     &-wrapper
       flex-direction: column
@@ -206,13 +227,13 @@
       &-active
         justify-content: space-evenly
     &__button
-      width: 100%
+      width: 259px
   .review
     &-icon
       padding-left: 25px
   .swiper-container
     max-width: 630px
-    height: 419px
+    height: 93%
   hr
     display: none
   .footer
@@ -250,6 +271,60 @@
         line-height: 20px
         &:nth-last-child(1)
           margin-bottom: 0
+  .stories
+    &__container
+      max-width: 90%
+    &__items
+      width: 73%
+    &__subtitle
+      width: 100%
+    &-slider
+      &_left
+        width: 280px
+        margin: 0
+        margin-bottom: 10px
+      &_right
+        width: 280px
+        margin: 0
+      &_info
+        width: 270px
+      &_title
+        font-weight: 500
+        font-size: 20px
+        line-height: 24px
+        margin-bottom: 16px
+      &_next
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+      &_img
+        width: 270px
+      &_item
+        display: flex
+        flex-direction: column
+        align-items: center
+  .stories
+    &-slider
+      &_info
+        top: -18px
+      &_title
+        width: 266px
+        padding-left: 22px
+    &-wrapper
+      padding-top: 40px
+    &__info
+      margin-bottom: 18px
+    &__title
+      font-weight: bold
+      font-size: 28px
+      line-height: 36px
+      &_visible
+        display: none
+    &__subtitle
+      font-size: 16px
+      line-height: 28px
+    &__button
+      width: 48px
 @media (max-width: 675px)
   .card
     padding-left: 12%
@@ -384,6 +459,16 @@
     &-container
       max-width: 280px
       height: 550px
+  .stories
+    &-wrapper
+      padding-top: 35px
+    &-slider
+      &_left
+        width: 272px
+        margin-right: 0
+      &_right
+        width: 272px
+        margin-right: 0
   .subscribe
     &-wrapper
       padding-top: 64px
@@ -409,6 +494,14 @@
 @media (max-width: 335px)
   .container
     max-width: 310px
+  .stories
+    margin-bottom: 45px
+    &__title
+      margin-top: 19px
+    &-slider
+      &-button
+        width: 48px
+        height: 48px
   .subscribe
     &__title
       font-size: 28px
