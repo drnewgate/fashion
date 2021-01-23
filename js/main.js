@@ -24,7 +24,7 @@ $(document).ready(function() {
     enabled: true,
   }, 
   autoplay: {
-        delay: 10000000,
+        delay: 7000,
         disableOnInteraction: false,
       }, 
         // Navigation arrows
@@ -63,7 +63,7 @@ var closeModalButton = $('.modal__close');
 modalButton.on('click', openModal);
 closeModalButton.on('click', closeModal);
 
-function openModal() {
+  function openModal() {
   var modalOverlay = $('.modal__overlay');
   var modalDialog = $('.modal__dialog');
   modalOverlay.addClass('modal__overlay--visible');
