@@ -177,8 +177,7 @@
     object-fit: contain
     padding-top: 39px
     padding-left: 41px
-    margin-bottom: 80px
-    margin-top: 104px
+    margin: 104px 20px 80px 20px
     &__title
       margin: 30px 0 20px 0
       font-size: 48px
@@ -221,7 +220,7 @@
       &-image
         height: 366px
     &-link
-      width: 34%
+      max-width: 260px
       padding-left: 15px
     &__item
       &-active
@@ -327,7 +326,7 @@
       width: 48px
 @media (max-width: 675px)
   .card
-    padding-left: 12%
+    padding-left: 7%
     &__frame
       width: 83%
   .container
@@ -345,7 +344,7 @@
   .content
     &__card
       &-image
-        width: 217px
+        width: 100%
         &-pic
           width: 100%
   .footer
@@ -354,10 +353,14 @@
   .container
     width: 350px
   .card
-    max-height: 899px
+    min-width: 426px
+    min-height: 945px
     background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%), url(../img/header-image-400.jpg)
     padding-left: 2%
     padding-top: 0
+    border-radius: 0
+    margin-left: 0
+    margin-right: 0
     &__block
       text-align: center
       padding-top: 381px
@@ -371,12 +374,16 @@
       margin-bottom: 20px
     &__text
       margin-bottom: 24px
+    &-link
     &__button
       margin-bottom: 37px
+      font-size: 16px
+      line-height: 22px
     &__frame
       display: flex
       flex-wrap: wrap
       justify-content: center
+      width: 100%
       padding-bottom: 20px
     &-item
       margin-right: 16px
@@ -440,6 +447,7 @@
           height: 25px
     &-link
       height: 224px
+      padding-left: 0
     &__button
       width: 140px
       height: 170px
@@ -458,7 +466,8 @@
   .swiper
     &-container
       max-width: 280px
-      height: 550px
+  .swiper-container stories-swiper swiper-container-initialized swiper-container-horizontal
+    height: 870px
   .stories
     &-wrapper
       padding-top: 35px
@@ -494,6 +503,22 @@
 @media (max-width: 335px)
   .container
     max-width: 310px
+  .header
+    &__mobile
+      &_fixed
+        max-width: 320px
+  .card
+    min-width: 320px
+    min-height: 960px
+  .content
+    &-link
+      min-width: 140px
+      padding-left: 0
+    &__card
+      &-text
+        padding-left: 0
+      &-info
+        padding-left: 0
   .stories
     margin-bottom: 45px
     &__title
