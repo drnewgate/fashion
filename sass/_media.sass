@@ -110,7 +110,7 @@
         right: 0
         z-index: 100
     &__container
-      width: 660px
+      max-width: 660px
     &__wrapper
       flex-wrap: wrap
     &__button
@@ -160,6 +160,7 @@
       display: flex
       width: 22px
       height: 18px
+      margin-right: 10px
       align-items: center
       justify-content: space-between
       flex-direction: column
@@ -192,7 +193,6 @@
       margin-bottom: 41px
     &__frame
       padding-bottom: 36px
-      width: 64%
       &__text
         line-height: 20px
         font-size: 16px
@@ -336,7 +336,6 @@
   .card
     padding-left: 7%
     &__frame
-      width: 83%
   .container
     max-width: 545px
   .collection
@@ -349,19 +348,26 @@
         width: 95%
     &__discription
       width: 90%
+  .review
+    &-content
+      max-width: 480px
+      margin: auto
   .content
+    &-link
+      max-width: 240px
     &__card
       &-image
         width: 100%
         &-pic
           width: 100%
+    &__button
+      max-width: 225px
   .footer
     padding: 48px 0 70px
 @media (max-width: 481px)
   .container
-    width: 350px
+    max-width: 350px
   .card
-    min-width: 426px
     min-height: 945px
     background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%), url(../img/header-image-400.jpg)
     padding-left: 2%

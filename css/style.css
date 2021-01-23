@@ -27,10 +27,6 @@ a {
   background: #183B56;
 }
 
-button:focus {
-  outline: none !important;
-}
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1243,7 +1239,7 @@ template {
 }
 
 .stories-swiper {
-  width: 652px;
+  max-width: 652px;
   height: 456px;
 }
 
@@ -1270,7 +1266,7 @@ template {
 }
 
 .subscribe__info {
-  width: 436px;
+  max-width: 436px;
 }
 
 .subscribe__title {
@@ -1630,7 +1626,7 @@ template {
     z-index: 100;
   }
   .header__container {
-    width: 660px;
+    max-width: 660px;
   }
   .header__wrapper {
     -ms-flex-wrap: wrap;
@@ -1700,6 +1696,7 @@ template {
     display: flex;
     width: 22px;
     height: 18px;
+    margin-right: 10px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1747,7 +1744,6 @@ template {
   }
   .card__frame {
     padding-bottom: 36px;
-    width: 64%;
   }
   .card__frame__text {
     line-height: 20px;
@@ -1950,9 +1946,6 @@ template {
   .card {
     padding-left: 7%;
   }
-  .card__frame {
-    width: 83%;
-  }
   .container {
     max-width: 545px;
   }
@@ -1969,11 +1962,21 @@ template {
   .collection__discription {
     width: 90%;
   }
+  .review-content {
+    max-width: 480px;
+    margin: auto;
+  }
+  .content-link {
+    max-width: 240px;
+  }
   .content__card-image {
     width: 100%;
   }
   .content__card-image-pic {
     width: 100%;
+  }
+  .content__button {
+    max-width: 225px;
   }
   .footer {
     padding: 48px 0 70px;
@@ -1982,10 +1985,9 @@ template {
 
 @media (max-width: 481px) {
   .container {
-    width: 350px;
+    max-width: 350px;
   }
   .card {
-    min-width: 426px;
     min-height: 945px;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(47.32%, rgba(238, 238, 238, 0.0001)), color-stop(65.51%, #E8EAE9)), url(../img/header-image-400.jpg);
     background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%), url(../img/header-image-400.jpg);
