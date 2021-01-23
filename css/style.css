@@ -1228,8 +1228,8 @@ template {
   letter-spacing: 0.2px;
   color: #183B56;
   width: 260px;
-  padding-top: 20px;
-  padding-left: 26px;
+  padding-top: 26px;
+  padding-left: 7px;
   margin-bottom: 18px;
 }
 
@@ -1244,7 +1244,7 @@ template {
 
 .stories-swiper {
   width: 652px;
-  height: 450px;
+  height: 456px;
 }
 
 .subscribe {
@@ -1802,17 +1802,30 @@ template {
     max-width: 630px;
     height: 93%;
   }
-  hr {
-    display: none;
+  .stories {
+    margin-bottom: 36px;
   }
-  .footer-wrapper {
-    padding: 0;
-    -ms-grid-columns: 230px (minmax(165px, max-content))[2];
-        grid-template-columns: 230px repeat(2, minmax(165px, -webkit-max-content));
-        grid-template-columns: 230px repeat(2, minmax(165px, max-content));
-    -webkit-column-gap: 20px;
-            column-gap: 20px;
+  .stories__title {
+    margin-top: 36px;
+    margin-bottom: 16px;
   }
+}
+
+.subscribe-wrapper {
+  padding-top: 32px;
+}
+
+.subscribe hr {
+  display: none;
+}
+
+.subscribe .footer-wrapper {
+  padding: 0;
+  -ms-grid-columns: 230px (minmax(165px, max-content))[2];
+      grid-template-columns: 230px repeat(2, minmax(165px, -webkit-max-content));
+      grid-template-columns: 230px repeat(2, minmax(165px, max-content));
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
 }
 
 @media (max-width: 690px) {

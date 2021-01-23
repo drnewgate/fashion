@@ -24,7 +24,7 @@ $(document).ready(function() {
     enabled: true,
   }, 
   autoplay: {
-        delay: 7000,
+        delay: 70000000,
         disableOnInteraction: false,
       }, 
         // Navigation arrows
@@ -32,7 +32,7 @@ $(document).ready(function() {
     nextEl: '.stories-slider-button--next',
     prevEl: '.stories-slider-button--prev', 
     disabledClass: 'stories-slider-button--disabled',
-  },
+  }
 })
 var mySwiper = new Swiper('.stories-swiper', {
   // Optional parameters
