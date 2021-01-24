@@ -12,6 +12,8 @@ body {
 .container {
   max-width: 1140px;
   margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 img {
@@ -25,6 +27,10 @@ a {
 
 .swiper-pagination-bullet-active {
   background: #183B56;
+}
+
+input, button {
+  outline: 0;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -481,11 +487,12 @@ template {
 .card {
   max-width: 1280px;
   border-radius: 8px;
-  background: -webkit-gradient(linear, right top, left top, color-stop(67.34%, rgba(238, 238, 238, 0.0001)), to(#E8EAE9)), url(../img/header-image.jpg);
-  background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%), url(../img/header-image.jpg);
+  background: -webkit-gradient(linear, right top, left top, color-stop(67.34%, rgba(238, 238, 238, 0.0001)), to(#E8EAE9)), url(../img/header-image.jpg) right bottom no-repeat;
+  background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%), url(../img/header-image.jpg) right bottom no-repeat;
   padding: 68px 0 0 107px;
   margin: auto;
   margin-bottom: 120px;
+  overflow: hidden;
 }
 
 .card__tag {
@@ -502,6 +509,8 @@ template {
 
 .card__title {
   max-width: 425px;
+  -webkit-font-feature-settings: "locl" 0;
+          font-feature-settings: "locl" 0;
   height: 205px;
   font-family: 'HKGrotesk-Bold';
   font-style: normal;
@@ -634,6 +643,8 @@ template {
 .collection__discription-title {
   margin: 0;
   font-family: "HKGrotesk-Bold";
+  -webkit-font-feature-settings: "locl" 0;
+          font-feature-settings: "locl" 0;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -684,6 +695,8 @@ template {
 
 .trends-title {
   font-family: "HKGrotesk-Bold";
+  -webkit-font-feature-settings: "locl" 0;
+          font-feature-settings: "locl" 0;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -764,7 +777,9 @@ template {
   display: block;
   margin: 0;
   padding-left: 15px;
-  font-family: HK Grotesk;
+  font-family: "HKGrotesk-Bold";
+  -webkit-font-feature-settings: "locl" 0;
+          font-feature-settings: "locl" 0;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -897,6 +912,8 @@ template {
   max-width: 800px;
   margin: 0;
   font-family: "HKGrotesk-Medium";
+  -webkit-font-feature-settings: "locl" 0;
+          font-feature-settings: "locl" 0;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -915,7 +932,9 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: HK Grotesk;
+  font-family: "HKGrotesk-Medium";
+  -webkit-font-feature-settings: "locl" 0;
+          font-feature-settings: "locl" 0;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -1023,6 +1042,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+  padding-left: 10px;
 }
 
 .modal__footer {
@@ -1151,6 +1171,8 @@ template {
 
 .stories__title {
   font-family: 'HKGrotesk-Bold';
+  -webkit-font-feature-settings: "locl" 0;
+          font-feature-settings: "locl" 0;
   font-weight: bold;
   font-size: 48px;
   line-height: 60px;
@@ -1314,6 +1336,7 @@ template {
   line-height: 22px;
   color: #183B56;
   border-radius: 8px;
+  display: inline;
 }
 
 .search__input::-webkit-input-placeholder {
@@ -1563,6 +1586,10 @@ template {
   .collection__discription-button {
     padding-left: 0;
   }
+  .content__item-active {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
   .stories {
     margin-bottom: 60px;
   }
@@ -1719,8 +1746,8 @@ template {
   .card {
     max-width: 728px;
     height: 624px;
-    background: -webkit-gradient(linear, right top, left top, color-stop(67.34%, rgba(238, 238, 238, 0.0001)), to(#E8EAE9)), url(../img/header-image-768.jpg) no-repeat;
-    background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%), url(../img/header-image-768.jpg) no-repeat;
+    background: -webkit-gradient(linear, right top, left top, color-stop(67.34%, rgba(238, 238, 238, 0.0001)), to(#E8EAE9)), url(../img/header-image-768.jpg) right bottom no-repeat;
+    background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%), url(../img/header-image-768.jpg) right bottom no-repeat;
     -o-object-fit: contain;
        object-fit: contain;
     padding-top: 39px;
@@ -1945,6 +1972,9 @@ template {
 @media (max-width: 675px) {
   .card {
     padding-left: 7%;
+  }
+  .card-item:last-child {
+    padding-right: 10px;
   }
   .container {
     max-width: 545px;
@@ -2191,6 +2221,7 @@ template {
 @media (max-width: 335px) {
   .container {
     max-width: 310px;
+    padding: 0 10px 0 10px;
   }
   .header__mobile_fixed {
     max-width: 320px;
@@ -2236,6 +2267,11 @@ template {
   }
   .content__card-info {
     padding-left: 0;
+  }
+  .content__item-active {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .review {
     margin-bottom: 18px;

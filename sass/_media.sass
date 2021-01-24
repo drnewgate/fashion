@@ -67,6 +67,10 @@
         margin-bottom: 24px
       &-button
         padding-left: 0
+  .content
+    &__item
+      &-active
+        justify-content: space-around
   .stories
     margin-bottom: 60px
     &-wrapper
@@ -174,7 +178,7 @@
   .card
     max-width: 728px
     height: 624px
-    background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%), url(../img/header-image-768.jpg) no-repeat
+    background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%), url(../img/header-image-768.jpg) right bottom no-repeat
     object-fit: contain
     padding-top: 39px
     padding-left: 41px
@@ -335,7 +339,8 @@
 @media (max-width: 675px)
   .card
     padding-left: 7%
-    &__frame
+    &-item:last-child
+      padding-right: 10px
   .container
     max-width: 545px
   .collection
@@ -518,6 +523,7 @@
 @media (max-width: 335px)
   .container
     max-width: 310px
+    padding: 0 10px 0 10px
   .header
     &__mobile
       &_fixed
@@ -556,6 +562,9 @@
         padding-left: 0
       &-info
         padding-left: 0
+    &__item
+      &-active
+        justify-content: space-between
   .review
     margin-bottom: 18px
     &-icon
