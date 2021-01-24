@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1190px;
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -410,6 +410,11 @@ template {
   margin-bottom: 36px;
 }
 
+.header__logo {
+  width: 90px;
+  height: 28px;
+}
+
 .header__logo_img {
   width: 90px;
   padding-left: 10px;
@@ -489,7 +494,7 @@ template {
   border-radius: 8px;
   background: -webkit-gradient(linear, right top, left top, color-stop(67.34%, rgba(238, 238, 238, 0.0001)), to(#E8EAE9)), url(../img/header-image.jpg) right bottom no-repeat;
   background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%), url(../img/header-image.jpg) right bottom no-repeat;
-  padding: 68px 0 0 107px;
+  padding: 68px 0 0 102px;
   margin: auto;
   margin-bottom: 120px;
   overflow: hidden;
@@ -1084,7 +1089,7 @@ template {
 }
 
 .stories {
-  margin-bottom: 116px;
+  margin-bottom: 162px;
 }
 
 .stories-wrapper {
@@ -1154,6 +1159,7 @@ template {
 
 .stories__info {
   width: 392px;
+  margin-right: 75px;
 }
 
 .stories__hashtag {
@@ -1293,12 +1299,15 @@ template {
 
 .subscribe__title {
   font-family: 'HKGrotesk-Bold';
+  -webkit-font-feature-settings: "locl" 0;
+          font-feature-settings: "locl" 0;
   font-weight: bold;
   font-size: 48px;
   line-height: 60px;
   letter-spacing: 0.2px;
   color: #FFFFFF;
   margin-bottom: 14px;
+  margin-top: 0;
 }
 
 .subscribe__subtitle {
@@ -1781,8 +1790,8 @@ template {
     width: 99%;
   }
   .collection__discription {
-    width: 84%;
-    margin-top: 24px;
+    width: 91%;
+    margin-top: 31px;
   }
   .collection__discription-title {
     margin-bottom: 30px;
@@ -1803,12 +1812,15 @@ template {
   .tabs {
     margin: auto;
   }
+  .content__card-text {
+    padding-left: 0;
+  }
   .content__card-image {
     height: 366px;
+    margin-bottom: 11px;
   }
   .content-link {
     max-width: 260px;
-    padding-left: 15px;
   }
   .content__item-active {
     -webkit-box-pack: space-evenly;
@@ -1819,7 +1831,10 @@ template {
     width: 259px;
   }
   .review-icon {
-    padding-left: 25px;
+    padding-left: 8px;
+  }
+  .review-content__text {
+    height: 210px;
   }
   .swiper-container {
     max-width: 630px;
@@ -1828,27 +1843,27 @@ template {
   .stories {
     margin-bottom: 36px;
   }
+  .stories-wrapper {
+    padding-top: 75px;
+  }
   .stories__title {
-    margin-top: 36px;
+    margin-top: 26px;
     margin-bottom: 16px;
   }
-}
-
-.subscribe-wrapper {
-  padding-top: 32px;
-}
-
-.subscribe hr {
-  display: none;
-}
-
-.subscribe .footer-wrapper {
-  padding: 0;
-  -ms-grid-columns: 230px (minmax(165px, max-content))[2];
-      grid-template-columns: 230px repeat(2, minmax(165px, -webkit-max-content));
-      grid-template-columns: 230px repeat(2, minmax(165px, max-content));
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
+  hr {
+    display: none;
+  }
+  .footer-wrapper {
+    padding: 0;
+    -ms-grid-columns: 230px (minmax(165px, max-content))[2];
+        grid-template-columns: 230px repeat(2, minmax(165px, -webkit-max-content));
+        grid-template-columns: 230px repeat(2, minmax(165px, max-content));
+    -webkit-column-gap: 50px;
+            column-gap: 50px;
+  }
+  .footer-text {
+    width: 240px;
+  }
 }
 
 @media (max-width: 690px) {
@@ -2019,8 +2034,8 @@ template {
   }
   .card {
     min-height: 945px;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(47.32%, rgba(238, 238, 238, 0.0001)), color-stop(65.51%, #E8EAE9)), url(../img/header-image-400.jpg);
-    background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%), url(../img/header-image-400.jpg);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(47.32%, rgba(238, 238, 238, 0.0001)), color-stop(65.51%, #E8EAE9)), url(../img/header-image-400.jpg) center top no-repeat;
+    background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%), url(../img/header-image-400.jpg) center top no-repeat;
     padding-left: 2%;
     padding-top: 0;
     border-radius: 0;
@@ -2230,9 +2245,10 @@ template {
     min-width: 320px;
     min-height: 892px;
     margin-bottom: 64px;
+    margin-top: 96px;
   }
   .card__title {
-    margin-bottom: 13px;
+    margin-bottom: 21px;
   }
   .card__text {
     font-size: 16px;
@@ -2243,13 +2259,17 @@ template {
   }
   .card__button {
     padding: 13px 46px;
-    margin-bottom: 16px;
+    margin-bottom: 21px;
   }
   .card-item {
-    margin-bottom: 2px;
+    margin-bottom: 16px;
+  }
+  .card-item__logo {
+    width: 24px;
+    height: 24px;
   }
   .collection__discription {
-    width: 85%;
+    width: 93%;
   }
   .collection__discription-title {
     margin-bottom: 24px;
@@ -2257,12 +2277,21 @@ template {
   .trends {
     margin-bottom: 40px;
   }
+  .trends__wrapper {
+    margin-bottom: 35px;
+  }
+  .tabs {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
   .content-link {
     min-width: 140px;
     padding-left: 0;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
   .content__card-text {
+    padding-top: 18px;
     padding-left: 0;
   }
   .content__card-info {
@@ -2274,44 +2303,62 @@ template {
             justify-content: space-between;
   }
   .review {
-    margin-bottom: 18px;
+    margin-bottom: 64px;
+  }
+  .review-content__text {
+    height: 361px;
+  }
+  .review-content-client {
+    width: 200px;
   }
   .review-icon {
     margin-bottom: 20px;
   }
+  .review-icon-pic {
+    width: 70px;
+  }
   .stories {
-    margin-bottom: 12px;
+    margin-bottom: 41px;
   }
   .stories__title {
     margin-top: 19px;
+  }
+  .stories__subtitle {
+    width: 98%;
+  }
+  .stories-slider_info {
+    top: -39px;
+    padding-bottom: 0;
   }
   .stories-slider-button {
     width: 48px;
     height: 48px;
   }
   .subscribe-wrapper {
-    padding-top: 41px;
+    padding-top: 63px;
   }
   .subscribe__title {
     font-size: 28px;
     line-height: 36px;
+    margin-bottom: 25px;
   }
   .subscribe__subtitle {
     font-size: 16px;
     line-height: 28px;
   }
   .subscribe__info {
-    max-width: 300px;
-    margin-bottom: 46px;
+    width: 277px;
+    margin-bottom: 37px;
   }
   .subscribe__container {
-    width: 280px;
+    width: 305px;
   }
   .footer-text {
+    width: 100%;
     text-align: center;
   }
   .footer-logo {
-    padding-left: 40%;
+    padding-left: 37%;
   }
   .footer-social-networks {
     display: -webkit-box;

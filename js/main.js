@@ -11,28 +11,31 @@ $(document).ready(function() {
     });
      AOS.init();
        
-  var mySwiper = new Swiper('.swiper-container', {
+ var mySwiper = new Swiper('.swiper-container', {
+  autoplay: {
+    delay: 70000,
+    disableOnInteraction: false, 
+  },
+  on: {
+    init() {
+      this.el.addEventListener('mouseenter', () => {
+        this.autoplay.stop();
+      });
+
+      this.el.addEventListener('mouseleave', () => {
+        this.autoplay.start();
+      });
+    }
+  },
   // Optional parameters
+  direction: 'horizontal',
   loop: true,
 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
-
-   keyboard: {
-    enabled: true,
-  }, 
-  autoplay: {
-        delay: 70000000,
-        disableOnInteraction: false,
-      }, 
-        // Navigation arrows
-  navigation: {
-    nextEl: '.stories-slider-button--next',
-    prevEl: '.stories-slider-button--prev', 
-    disabledClass: 'stories-slider-button--disabled',
-  }
 })
 var mySwiper = new Swiper('.stories-swiper', {
   // Optional parameters
@@ -45,7 +48,10 @@ var mySwiper = new Swiper('.stories-swiper', {
     prevEl: '.stories-slider-button--prev', 
     disabledClass: 'stories-slider-button--disabled',
   },
-})
+});
+
+
+
 var menuButton = document.querySelector(".menu-button");
 menuButton.addEventListener('click', function () {
   console.log('Клик по кнопке');

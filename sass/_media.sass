@@ -206,8 +206,8 @@
       &-first
         width: 99%
     &__discription
-      width: 84%
-      margin-top: 24px
+      width: 91%
+      margin-top: 31px
       &-title
         margin-bottom: 30px
   .trends
@@ -221,11 +221,13 @@
     margin: auto
   .content
     &__card
+      &-text
+        padding-left: 0
       &-image
         height: 366px
+        margin-bottom: 11px
     &-link
       max-width: 260px
-      padding-left: 15px
     &__item
       &-active
         justify-content: space-evenly
@@ -233,25 +235,30 @@
       width: 259px
   .review
     &-icon
-      padding-left: 25px
+      padding-left: 8px
+    &-content
+      &__text
+        height: 210px
+
   .swiper-container
     max-width: 630px
     height: 93%
   .stories
     margin-bottom: 36px
+    &-wrapper
+      padding-top: 75px
     &__title
-      margin-top: 36px
+      margin-top: 26px
       margin-bottom: 16px
-.subscribe
-  &-wrapper
-    padding-top: 32px
   hr
     display: none
   .footer
     &-wrapper
       padding: 0
       grid-template-columns: 230px repeat(2, minmax(165px, max-content))
-      column-gap: 20px
+      column-gap: 50px
+    &-text
+      width: 240px
 @media ( max-width: 690px )
   .footer
     padding: 48px 0 70px
@@ -374,7 +381,7 @@
     max-width: 350px
   .card
     min-height: 945px
-    background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%), url(../img/header-image-400.jpg)
+    background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%), url(../img/header-image-400.jpg) center top no-repeat
     padding-left: 2%
     padding-top: 0
     border-radius: 0
@@ -532,8 +539,9 @@
     min-width: 320px
     min-height: 892px
     margin-bottom: 64px
+    margin-top: 96px
     &__title
-      margin-bottom: 13px
+      margin-bottom: 21px
     &__text
       font-size: 16px
       line-height: 28px
@@ -542,23 +550,31 @@
       text-align: center
     &__button
       padding: 13px 46px
-      margin-bottom: 16px
+      margin-bottom: 21px
     &-item
-      margin-bottom: 2px
+      margin-bottom: 16px
+      &__logo
+        width: 24px
+        height: 24px
   .collection
     &__discription
-      width: 85%
+      width: 93%
       &-title
         margin-bottom: 24px
   .trends
     margin-bottom: 40px
+    &__wrapper
+      margin-bottom: 35px
+  .tabs
+    justify-content: space-evenly
   .content
     &-link
       min-width: 140px
       padding-left: 0
-      margin-bottom: 25px
+      margin-bottom: 30px
     &__card
       &-text
+        padding-top: 18px
         padding-left: 0
       &-info
         padding-left: 0
@@ -566,36 +582,50 @@
       &-active
         justify-content: space-between
   .review
-    margin-bottom: 18px
+    margin-bottom: 64px
+    &-content
+      &__text
+        height: 361px
+      &-client
+        width: 200px
     &-icon
       margin-bottom: 20px
+      &-pic
+        width: 70px
   .stories
-    margin-bottom: 12px
+    margin-bottom: 41px
     &__title
       margin-top: 19px
+    &__subtitle
+      width: 98%
     &-slider
+      &_info
+        top: -39px
+        padding-bottom: 0
       &-button
         width: 48px
         height: 48px
   .subscribe
     &-wrapper
-      padding-top: 41px
+      padding-top: 63px
     &__title
       font-size: 28px
       line-height: 36px
+      margin-bottom: 25px
     &__subtitle
       font-size: 16px
       line-height: 28px
     &__info
-      max-width: 300px
-      margin-bottom: 46px
+      width: 277px
+      margin-bottom: 37px
     &__container
-      width: 280px
+      width: 305px
   .footer
     &-text
+      width: 100%
       text-align: center
     &-logo
-      padding-left: 40%
+      padding-left: 37%
     &-social
       &-networks
         display: flex
