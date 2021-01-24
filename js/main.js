@@ -13,7 +13,7 @@ $(document).ready(function() {
        
  var mySwiper = new Swiper('.swiper-container', {
   autoplay: {
-    delay: 70000,
+    delay: 7000,
     disableOnInteraction: false, 
   },
   on: {
