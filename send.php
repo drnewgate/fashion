@@ -5,6 +5,8 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
+$name = $_POST['name'];
+$phone = $_POST['phone'];
 $email = $_POST['email'];
 
 
@@ -12,7 +14,9 @@ $email = $_POST['email'];
 $title = "Новое сообщение Ehya";
 $body = "
 <h2>Новое письмо</h2>
-<b>Почта:</b> $email<br><br>";
+<b>Почта:</b> $email<br><br>
+<b>Имя:</b> $name<br><br>
+<b>Телефон:</b> $phone<br><br>";
 
 
 // Настройки PHPMailer

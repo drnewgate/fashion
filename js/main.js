@@ -9,12 +9,12 @@ $(document).ready(function() {
         $(activeContent).addClass('content__item-active');
         $(this).addClass('tabs__item-active');
     });
-     AOS.init();
+AOS.init();
        
- var mySwiper = new Swiper('.swiper-container', {
+ var mySwiper = new Swiper('.swiper-container-review', {
   autoplay: {
     delay: 7000,
-    disableOnInteraction: false, 
+    disableOnInteraction: true, 
   },
   on: {
     init() {
@@ -38,6 +38,7 @@ $(document).ready(function() {
   },
 })
 var mySwiper = new Swiper('.stories-swiper', {
+  
   // Optional parameters
   direction: 'horizontal',
   loop: false,

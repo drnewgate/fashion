@@ -43,6 +43,11 @@ input, button, .stories-slider-button {
           transform: rotate(0.75turn);
 }
 
+.swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1698,9 +1703,6 @@ template {
     display: block;
     margin: auto;
   }
-  .header__logo {
-    padding-left: 10px;
-  }
   .navbar-menu {
     display: none;
     position: fixed;
@@ -1728,7 +1730,7 @@ template {
   }
   .navbar-menu__item {
     margin-bottom: 35px;
-    width: 100%;
+    width: 15%;
   }
   .navbar-menu--visible {
     display: -webkit-box;
@@ -1738,9 +1740,9 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .navbar-menu__close--visible {
     display: block;
@@ -1783,7 +1785,7 @@ template {
     -o-object-fit: contain;
        object-fit: contain;
     padding-top: 39px;
-    padding-left: 41px;
+    padding-left: 30px;
     margin: 104px 20px 80px 20px;
   }
   .card__title {
@@ -1809,15 +1811,21 @@ template {
     font-size: 16px;
     max-width: 119px;
   }
+  .card-item__logo {
+    width: 36px;
+  }
+  .collection__wrapper {
+    margin-bottom: 75px;
+  }
   .collection__images-first {
     width: 99%;
   }
   .collection__discription {
     width: 91%;
-    margin-top: 31px;
+    margin-top: 26px;
   }
   .collection__discription-title {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
   .trends {
     margin-bottom: 53px;
@@ -1827,6 +1835,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 60px;
   }
   .trends-title {
     margin: auto;
@@ -1840,7 +1849,7 @@ template {
   }
   .content__card-image {
     height: 366px;
-    margin-bottom: 11px;
+    margin-bottom: 6px;
   }
   .content-link {
     max-width: 260px;
@@ -1864,7 +1873,7 @@ template {
     height: 93%;
   }
   .stories {
-    margin-bottom: 36px;
+    margin-bottom: 35px;
   }
   .stories-wrapper {
     padding-top: 75px;
@@ -1890,6 +1899,9 @@ template {
 }
 
 @media (max-width: 690px) {
+  .container {
+    padding: 0;
+  }
   .footer {
     padding: 48px 0 70px;
   }
@@ -2269,6 +2281,9 @@ template {
   .header__mobile_fixed {
     max-width: 320px;
   }
+  .navbar-menu__item {
+    width: 40%;
+  }
   .card {
     min-width: 320px;
     min-height: 892px;
@@ -2302,6 +2317,9 @@ template {
   .collection__discription-title {
     margin-bottom: 24px;
   }
+  .collection__wrapper {
+    margin-bottom: 116px;
+  }
   .trends {
     margin-bottom: 40px;
   }
@@ -2323,7 +2341,7 @@ template {
     margin-bottom: 30px;
   }
   .content__card-text {
-    padding-top: 18px;
+    padding-top: 8px;
     padding-left: 0;
   }
   .content__card-info {
@@ -2353,7 +2371,7 @@ template {
     width: 70px;
   }
   .stories {
-    margin-bottom: 32px;
+    margin-bottom: 42px;
   }
   .stories-wrapper {
     padding-top: 43px;
@@ -2368,12 +2386,15 @@ template {
     margin-bottom: 28px;
   }
   .stories-slider_info {
-    top: -51px;
+    top: -45px;
     padding-bottom: 0;
   }
   .stories-slider-button {
     width: 48px;
     height: 48px;
+  }
+  .stories-slider_left {
+    margin-bottom: 0;
   }
   .stories-slider_next {
     padding-left: 20px;
@@ -2397,6 +2418,9 @@ template {
   .subscribe__container {
     width: 305px;
   }
+  .footer-main {
+    margin-top: 40px;
+  }
   .footer-text {
     width: 100%;
     text-align: center;
@@ -2411,6 +2435,10 @@ template {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .tabs__item {
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 /*# sourceMappingURL=style.css.map */
