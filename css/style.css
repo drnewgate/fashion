@@ -29,7 +29,7 @@ a {
   background: #183B56;
 }
 
-input, button {
+input, button, .stories-slider-button {
   outline: 0;
 }
 
